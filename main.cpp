@@ -21,13 +21,16 @@ bool check();
 void deallocate();
 
 int main() {
-  if (!init()) return 1;
+  if (!init())
+    return 1;
 	timer = al_create_timer(1.0 / 30.0);
 	queue = al_create_event_queue();
 	disp = al_create_display(1080, 720);
 	// font = al_create_builtin_font();
-	font = al_load_ttf_font("res/Iosevka.ttf", 24, ALLEGRO_TTF_NO_AUTOHINT);
-  if (!check()) return 1;
+	// font = al_load_ttf_font("res/Iosevka.ttf", 24, ALLEGRO_TTF_NO_AUTOHINT);
+	font = al_load_ttf_font("res/Fira Code Regular Nerd Font Complete Mono.ttf", 24, ALLEGRO_TTF_NO_AUTOHINT);
+  if (!check())
+    return 1;
 	al_register_event_source(queue, al_get_keyboard_event_source());
 	al_register_event_source(queue, al_get_display_event_source(disp));
 	al_register_event_source(queue, al_get_timer_event_source(timer));
@@ -38,7 +41,15 @@ int main() {
 
   // Rectangle* rect = new Rectangle(40, 30);
   // TextBlock* text = new TextBlock("hola");
-  Doc* doc = new Doc({"line1", "line2", "line3", "line4", "Abey saale"});
+  Doc* doc = new Doc({
+      "Hola,",
+      "",
+      "This is a simple text editor (like notepad in windows)",
+      "Made from scratch",
+      "Uses only one library - Allegro, https://liballeg.org",
+      "",
+      "No GUI Libraries used :)"
+  });
 
   al_start_timer(timer);
   while (!done) {

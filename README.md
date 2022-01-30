@@ -97,3 +97,15 @@ make build
 - Windows users:
   - use `mingw32-make build` instead of `make build`
   - use `.\main.exe` instead of `./main`
+
+#### TODO
+- [x] Basic Features
+- [ ] Taking input when a modifier key is active
+- [ ] Tab Support
+- [ ] File Read/Write
+- [ ] Syntax Highliting
+- [ ] StatusLine
+- [ ] Maybe 🤔 Modal Editing (like [Vim](https://github.com/vim/vim), [Neovim](https://github.com/neovim/neovim), ... )
+- [ ] Maybe 🤔 trying out differnet data structures for DocBuffer
+    - [ ] Rope Data Structure (used by [Xi-Editor](https://github.com/xi-editor/xi-editor))
+    - [ ] PieceTable Data Structure (currently used by [VSCode](https://github.com/microsoft/vscode))

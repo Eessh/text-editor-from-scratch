@@ -107,5 +107,6 @@ make build
 - [ ] StatusLine
 - [ ] Maybe 🤔 Modal Editing (like [Vim](https://github.com/vim/vim), [Neovim](https://github.com/neovim/neovim), ... )
 - [ ] Maybe 🤔 trying out differnet data structures for DocBuffer
+    - [ ] Using double buffers (left and right to cursor)
     - [ ] Rope Data Structure (used by [Xi-Editor](https://github.com/xi-editor/xi-editor))
     - [ ] PieceTable Data Structure (currently used by [VSCode](https://github.com/microsoft/vscode))

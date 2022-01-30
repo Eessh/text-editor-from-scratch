@@ -1,9 +1,12 @@
 # text-editor-from-scratch
 
+A simple text editor (like notepad in windows), made from scratch, uses only one library ([liballeg](https://liballeg.org) ↗️) for input and rendering.
+No GUI Libraries used 🙂
+
 ![](/screenshots/editor.png)
 
 ### Building from Source:
-#### Dependencies: [liballegro](https://liballegro.org) ↗️
+#### Dependencies: [liballeg](https://liballeg.org) ↗️
 <details>
 <summary>Installing on Linux</summary>
 
